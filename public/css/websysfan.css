@@ -1,0 +1,109 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+   --greenmio:#1abb9c;
+}
+body{width:100%;height:auto;
+   position:relative;margin:0;padding:0;
+   box-sizing:border-box;}
+
+body::-webkit-scrollbar {width:1px;height:20px;background:#49d2fe;}
+body::-webkit-scrollbar-thumb {background:#024358;border-radius: 2px;}
+/* =========================================
+************ User Page  
+========================================= */
+.usuario{width:100%;height:auto;
+   position:absolute;z-index:9;;margin:0;padding:3em .5em;
+   box-sizing:border-box;}
+   .childUsuario{width:100%;max-width:600px;height:auto;
+      padding:3em 2em;
+      margin:0 auto;background:var(--corporativo);
+      border-radius:.5em;box-shadow:0 5px 5px rgba(0,0,0,.5);}
+.box-welcome{width:100%;height:auto;min-height:auto;}
+.box-welcome {width:100%;height:auto;
+   display:flex;align-items:center;justify-content:center;
+   flex-direction:column;}
+
+.btnLogin{width:100%;height:auto;max-width:300px;
+   margin-top:1rem;
+   background:#e0039e;padding: .5rem 2rem;
+   border-radius: 8px;}
+.btnLogin a{display: block;
+   text-decoration:none;text-align: center;
+   font-size:1.5rem;color:#222;;}
+.btnLogin:hover{transform:scale(1.02) translateY(-3px);
+   box-shadow:0 0 8px 3px rgba(0,0,0,.5);;}
+.btnLogin:active{transform:scale(.80) translateY(5px);
+   box-shadow:0 0 8px 3px rgba(0,0,0,.5) inset;;}
+
+   .box-welcome h1{background: #f5f10b;
+   border-radius:8px;text-align: center;
+   padding: .5rem 1rem;display:inline-block;
+   box-shadow:0 0 8px 3px rgba(0,0,0,.5);}
+   .bgimg{width:100%;height:auto;
+      position:relative;z-index:1;}
+   .bgimg>img{width:100%;height:100%;
+      object-fit:cover;position:fixed}
+.box-welcome > .card{background: #03c4c4;}
+/* =========================================
+************ LOGIN Page  
+========================================= */
+.login{width:100%;height:auto;min-height:100%;
+   margin: 0 auto;padding: 3rem;;}
+.login, .card{width:100%;height:auto;max-width:500px;}
+
+/* =========================================
+************ PAGES Page  
+========================================= */
+.pages{width:100%;height:auto;
+   padding: 3rem 1rem;;}
+.chilPages{width:100%;height:auto;}
+.chilPages .form{width:100%;max-width:500px;;height:auto;
+   margin: 0 auto;padding: 2rem 1rem;
+   border-radius:.5rem;
+   background: #ddd;
+   box-shadow:0 0 8px 3px rgba(0,0,0,.5);}
+.boxInput{width:100%;height:auto;
+   margin: 0 auto;}
+
+.boxInput label{font-size:1.2rem;padding: 0;margin: 0;}  
+.estado, .accions{display:flex;
+   justify-content:space-around;}
+.accions a{width:2em;height:2em;
+   color:#ededed;margin:0 .2em;
+   border-radius:4px;text-decoration:none;
+   display:flex;align-items:center;justify-content:center;  
+   transition:all .2s ease;;}
+.accions a:nth-child(1){background:var(--primary);}
+.accions a:nth-child(2){background:var(--success);}
+.accions a:nth-child(3){background:var(--danger);}
+.accions a:hover, .btnDelete button:hover{transform:scale(1.04) translateY(-2px);box-shadow:0 5px 5px rgba(0,0,0,.5);}
+.accions a:active, .btnDelete button:active{transform:scale(.90) translateY(2px);box-shadow:0 5px 5px rgba(0,0,0,.5) inset;}
+
+.btnDelete button{width:28px;height:28px;
+   background:var(--danger);border:0;color:#ddd;
+   transition:all .2s ease;;}
+
+
+.pagination{width:100%;height:auto;
+   padding:.5em;
+   display:flex;align-items:center;
+   justify-content:center;;}
+
+
+/* ===========   Section  Tables   =========== */ 
+
+.tableBody{width:100%;height:auto;;padding:0;
+   overflow:auto;white-space: nowrap;}
+.ctnTable{width:100%;height:auto;}
+
+.tableInfo{width:100%;height:auto;max-width:500px;
+   margin:0 auto;overflow:auto;white-space: nowrap;}
+
+.tableBody::-webkit-scrollbar{width:2em;height:.5em; background:#101529;}
+.tableBody::-webkit-scrollbar-thumb{background:var(--greenmio);border-radius: 2px;}
+.table thead{width:100%;height:auto;
+   background:#101529;color:#ededed;}
+.tableFilas tr:nth-child(even){width:100%;height:auto;
+   background: #c9f1e1;transition:all .2s ease;;}
+.tableFilas tr:nth-child(even):hover{background: #a9d8c5;}
+
